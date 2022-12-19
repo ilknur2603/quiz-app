@@ -28,6 +28,7 @@ let questions = [
     answer: "Netscape",
     options: [
       "Google Lab",
+      "Facebook Lab",
       "Netscape",
       "AT&T Bell lab",
       "Sun Microsystem",
@@ -50,6 +51,7 @@ let questions = [
     answer: "To add interactivity to HTML Pages",
     options: [
       "To Execute Query Related to DB on Server",
+      "To changing css codes",
       "To style HTML Pages",
       "To Perform Server Side Scripting Operation",
       "To add interactivity to HTML Pages",

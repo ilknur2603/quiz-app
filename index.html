@@ -5,21 +5,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css" />
+   
     <title>Quiz App</title>
 </head>
 <body>
-
-    <div class="start_btn"><button>START</button></div>
-
+     
+      
+          <div class="start_btn"><button>START</button></div>
+        
 <div class = "exam_box">
     <header>
         <div class = "title" > JS EXAM </div>
         <div class = "countDown"> 10 </div>
     </header>
-    <form>
-    <input type="text" name="username" id="username"
-    placeholder="username">
-    </form>
+
     <section>
         <div class ="que_text"></div>
         <div class ="option_list"></div>
@@ -35,10 +34,14 @@
     <button class ="quit_btn">EXIST</button>
     <form>
         <input type="text" name="Username" id="Username" placeholder="username" />
+        <button type="submit" class="btn-high-score" id="highscore" onclick="showhighscore(event)">High Scores</button>
         <button type="submit" class="btn" id="saveScoreBtn" onclick="saveHighScore(event)">SAVE</button>
 </form>  
 </div>
  <script src="script.js"></script>  
  <script src="que.js" ></script>
+<script src="highscores.js"></script>
+
+
 </body>
 </html>

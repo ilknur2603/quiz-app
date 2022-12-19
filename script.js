@@ -8,13 +8,36 @@ const quit_btn = document.querySelector(".quit_btn");
 const scoreboard = document.querySelector(".scoreboard");
 const que_text = document.querySelector(".que_text");
 const scoreText = document.querySelector(".score_text");
+/*
 const username =document.querySelector("Username");
 const saveScoreBtn=document.getElementById("saveScoreBtn");
+
+const highScores =JSON.parse(localStorage.getItem('highScores')) || []
+const MAX_HIGH_SCORES =5
+finalScore.innerText =mostRecentScore
 
 Username.addEventListener("keyup",()=>{
 saveScoreBtn.disabled = !Username.value;
 });
 
+saveHighScore =e =>{
+    e.prevent.Default()
+const score ={
+    score:mostRecentScore,
+    name:username.value
+}
+highScores.push(score)
+highScores.sort((a,b)=> {
+    return b.score=a.score
+})
+highScores.splice(5)
+localStorage.setItem('highScores', json.stringify(highScores))
+window.location.assign('/')
+}
+username.addEventListener("keyup",()=>{
+    saveScoreBtn.disabled = !username.value;
+    });
+*/
 start_btn.onclick = ()=>{
     exam_box.classList.add("activeQuiz"); 
     showQuetions(que_count); 
@@ -107,7 +130,7 @@ function autoQuestionPast(){
 function showResult(){
     exam_box.classList.remove("activeQuiz");
     result_box.classList.add("activeResult"); 
-    let scoreTag = '<span><p>Toplam Puan '+ userScore +'</p>/<p>'+ questions.length +'</p></span>';
+    let scoreTag = '<span><p>Total Point '+ userScore +'</p>/<p>'+ questions.length +'</p></span>';
     scoreText.innerHTML = scoreTag;
 }
 
